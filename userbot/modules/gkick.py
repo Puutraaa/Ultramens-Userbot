@@ -25,7 +25,7 @@ async def get_user_from_event(event):
         if user.isnumeric():
             user = int(user)
         if not user:
-            await event.edit(f"`{ALIVE_NAME}`: ** Pass the user's username, id or reply!**")
+            await event.edit(f"`{ALIVE_NAME}`: ** REPLY KE PENGGUNAAN,ATAU ID PENGGUNAAN!**")
             return
         if event.message.entities is not None:
             probable_user_mention_entity = event.message.entities[0]
