@@ -13,29 +13,22 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(1)
-    await typew.edit(f"**Hallo Semua Saya {DEFAULTUSER}**")
-    sleep(2)
-    await typew.edit("`Assalamualaikum.....`")
+    await typew.edit("`**Assalamualaikum.....**`")
 # Owner @Si_Dian
 
 
 @bot.on(geezbot_cmd(outgoing=True, pattern='p(?: |$)(.*)'))
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    sleep(1)
-    await typew.edit(f"**Hallo Semua Saya {DEFAULTUSER}**")
-    sleep(2)
-    await typew.edit("`Assalamualaikum.....`")
+    sleep(1)  
+    await typew.edit("`**P WR WB**.....`")
 # Owner @Si_Dian
-
 
 @bot.on(geezbot_cmd(outgoing=True, pattern='L(?: |$)(.*)'))
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(1)
-    await typew.edit("`Astaghfirulloh Jawab Salam Dong...`")
-    sleep(1)
-    await typew.edit("`Waallaikumsalam......`")
+    await typew.edit("`**Walaikumsalam......**`")
 # Owner @Si_Dian
 
 
@@ -43,9 +36,7 @@ async def typewriter(typew):
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(1)
-    await typew.edit("`Astaghfirulloh Jawab Salam Dong...`")
-    sleep(1)
-    await typew.edit("`Waallaikumsalam.....`")
+    await typew.edit("`**Walaikumshalom.....**`")
 # Owner @Si_Dian
 
 
