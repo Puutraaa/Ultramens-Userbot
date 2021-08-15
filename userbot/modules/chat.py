@@ -75,7 +75,7 @@ async def _(event):
     try:
         async for x in bot.iter_participants(chat, filter=ChannelParticipantsBots):
             if isinstance(x.participant, ChannelParticipantAdmin):
-                mentions += "\n ⚜️ [{}](tg://user?id={}) `{}`".format(
+                mentions += "\n ⚔️ [{}](tg://user?id={}) `{}`".format(
                     x.first_name, x.id, x.id)
             else:
                 mentions += "\n [{}](tg://user?id={}) `{}`".format(
@@ -109,7 +109,7 @@ async def log(log_text):
 @bot.on(geezbot_cmd(outgoing=True, pattern="kickme$"))
 async def kickme(leave):
     """ Basically it's .kickme command """
-    await leave.edit("Master left the chat 😛")
+    await leave.edit("Ultramen left the chat 😛")
     await leave.client.kick_participant(leave.chat_id, 'me')
 
 
