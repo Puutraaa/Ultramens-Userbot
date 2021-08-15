@@ -54,8 +54,8 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
         heroku_applications = heroku.apps()
         if HEROKU_APP_NAME is None:
             await event.edit(
-                '`[HEROKU]: Please set up the` **HEROKU_APP_NAME** `variable'
-                ' to be able to deploy newest changes of userbot.`'
+                '`[HEROKU]: TOLONG SET` **HEROKU_APP_NAME** `variabel'
+                ' MOHON DI GANTI KE YG BARU`'
             )
             repo.__del__()
             return
@@ -65,11 +65,11 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
                 break
         if heroku_app is None:
             await event.edit(
-                f'{txt}\n`Invalid Heroku credentials for deploying userbot dyno.`'
-            )
+                f'{txt}\n`GAGAL!!! Makanya Jan Pake Fake CC `'
+            ) 
             return repo.__del__()
         await event.edit('`[HEROKU]:'
-                         '\nUpdate Deploy GeezProjects, Silahkan Tunggu 5-8 menit..`'
+                         '\nUpdate Deploy Ultramen Userbot, Silahkan Tunggu 5-8 menit..`'
                          )
         ups_rem.fetch(ac_br)
         repo.git.reset("--hard", "FETCH_HEAD")
@@ -88,12 +88,12 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
         build = app.builds(order_by="created_at", sort="desc")[0]
         if build.status == "failed":
             await event.edit(
-                "`Build failed!\n" "Cancelled or there were some errors...`"
+                "`Build failed!\n" "Error!!!`"
             )
             await asyncio.sleep(5)
             return await event.delete()
         else:
-            await event.edit("`Berhasil Update Deploy!\n" "Merestart GeezProjects, silahkan tunggu...`")
+            await event.edit("`Berhasil Update Deploy!\n" "Merestart Ultramen Userbot, silahkan tunggu...`")
             await asyncio.sleep(15)
             await event.delete()
 
@@ -141,7 +141,7 @@ async def update(event, repo, ups_rem, ac_br):
 @bot.on(geezbot_cmd(outgoing=True, pattern=r"update(?: |$)(now|deploy)?"))
 async def upstream(event):
     "For .update command, check if the bot is up to date, update if specified"
-    await event.edit("`Checking for updates, please wait....`")
+    await event.edit("`MENGECEK UPDATE TERBARU`")
     conf = event.pattern_match.group(1)
     off_repo = UPSTREAM_REPO_URL
     force_update = False
