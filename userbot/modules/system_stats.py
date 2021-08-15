@@ -171,7 +171,7 @@ async def bot_ver(event):
             f"{verout}"
             "` \n"
             "   Revision: "
-            f"{revout}🇲🇨\n"
+            f"{revout}⚔️\n"
             "╰━━━━━━━━━━━━━━━━━━━━╯ "
         )
     else:
