@@ -26,7 +26,7 @@ async def help(event):
             await event.delete()
     else:
         await event.edit(f"**╭────────────────────**\
-            \n│   Help for GEEZ PROJECTS \
+            \n│   Help for Ultramen Userbot \
             \n╰────────────────── \
             \n╭────────────────────\
             \n│  Untuk melihat lengkap CMD\
@@ -36,8 +36,8 @@ async def help(event):
         string = ""
         for i in CMD_HELP:
             string += "`" + str(i)
-            string += "`\t🔸 "
-        await event.reply("───────────────────\n" f"🔸{string}•"
+            string += "`\t⚔️ "
+        await event.reply("───────────────────\n" f"⚔️{string}•"
                           "\n───────────────────")
         await asyncio.sleep(100)
         await event.delete()
