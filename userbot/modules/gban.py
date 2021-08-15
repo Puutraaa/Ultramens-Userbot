@@ -39,7 +39,7 @@ async def get_full_user(event):
         try:
             user_obj = await event.client.get_entity(user)
         except Exception as err:
-            return await event.edit("Something Went Wrong", str(err))
+            return await event.edit("Terjadi kesalahan", str(err))
     return user_obj, extra
 
 
@@ -60,11 +60,11 @@ async def gspider(userbot):
     sender = await lol.get_sender()
     me = await lol.client.get_me()
     if not sender.id == me.id:
-        friday = await lol.reply("Gbanning User..")
+        friday = await lol.reply("Gbanning BABU")
     else:
-        friday = await lol.edit("Wait Processing.....")
+        friday = await lol.edit("MENPERPROSES MOHON TUNGGU")
     me = await userbot.client.get_me()
-    await friday.edit(f"**Global Ban user..**")
+    await friday.edit(f"**Global Ban BABU!!**")
     my_mention = "[{}](tg://user?id={})".format(me.first_name, me.id)
     f"@{me.username}" if me.username else my_mention
     await userbot.get_chat()
@@ -86,7 +86,7 @@ async def gspider(userbot):
     if user:
         if user.id == 1282429349:
             return await friday.edit(
-                f"**Didn't , Your Father Teach You ? That You Cant Gban your creator🖕**"
+                f"**ELU GABISA BAN. DIRI SENDIRI GOBLOK🖕**"
             )
         try:
             from userbot.modules.sql_helper.gmute_sql import gmute
@@ -112,7 +112,7 @@ async def gspider(userbot):
         await friday.edit(f"**Reply to a user !!**")
     try:
         if gmute(user.id) is False:
-            return await friday.edit(f"**Error! User telah di gbanned.**")
+            return await friday.edit(f"**Error! BABU telah di gbanned.**")
     except BaseException:
         pass
     return await friday.edit(
@@ -134,11 +134,11 @@ async def gspider(userbot):
     sender = await lol.get_sender()
     me = await lol.client.get_me()
     if not sender.id == me.id:
-        friday = await lol.reply("`Wait Let Me Process`")
+        friday = await lol.reply("`SEDANG MENPERPROSES MOHON TUNGGU`")
     else:
-        friday = await lol.edit("Just a Second ")
+        friday = await lol.edit("DALAM BEBERAPA DETIK ")
     me = await userbot.client.get_me()
-    await friday.edit(f"Trying To Ungban User !")
+    await friday.edit(f"UDAH DI UNGBAN !")
     my_mention = "[{}](tg://user?id={})".format(me.first_name, me.id)
     f"@{me.username}" if me.username else my_mention
     await userbot.get_chat()
@@ -159,7 +159,7 @@ async def gspider(userbot):
         return await friday.edit("Terjadi Kesalahan!!")
     if user:
         if user.id == 1282429349:
-            return await friday.edit("**You Cant gban him... as a result you can not ungban him... He is My Creator!**")
+            return await friday.edit("**MAMPUS TOLOL DI GBAN CUMA GE YG BISA BUKA!**")
         try:
             from userbot.modules.sql_helper.gmute_sql import ungmute
         except BaseException:
@@ -184,7 +184,7 @@ async def gspider(userbot):
         await friday.edit("**Reply to a user !!**")
     try:
         if ungmute(user.id) is False:
-            return await friday.edit("**Error! User probably already ungbanned.**")
+            return await friday.edit("**Error! TERJADI MASALAH DALAM ungbanned BABU.**")
     except BaseException:
         pass
     return await friday.edit(
