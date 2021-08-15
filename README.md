@@ -1,25 +1,25 @@
-<h1 align="center"><img src="./userbot/resources/Music.gif" width="30px"> GEEZ PROJECTS <img src="./userbot/resources/Music.gif" width="30px"></h1>
+<h1 align="center"><img src="./userbot/resources/" width="30px"> Ultramen Userbot <img src="./userbot/resources/" width="30px"></h1>
 
-![Geez UserBot](https://telegra.ph/file/9695504a3c013f90b6755.gif)
+![Ultramen Userbot](https://telegra.ph/file/a356bb096363064a0f733.png)
 
 <p align="left">
-  <a href="https://github.com/vckyou/GeezProjects/fork"><img src="https://img.shields.io/github/forks/vckyou/GeezProjects?label=Fork&style=social"></a>
+  <a href="https://github.com/Puutraaa/Ultramen-Userbot/fork"><img src="https://img.shields.io/github/forks/Puutraaa/Ultramen-Userbot?label=Fork&style=social"></a>
   </p>
 <p align="left">
-  <a href="https://github.com/vckyou/GeezProjects"><img src="https://img.shields.io/github/stars/vckyou/GeezProjects?style=social"></a>
+  <a href="https://github.com/Puutraaa/Ultramens-Userbot"><img src="https://img.shields.io/github/stars/Puutraaa/Ultramen-Userbot?style=social"></a>
   </p>
 <p align="left">
-  <a href="https://github.com/vckyou/GeezProjects/blob/master/LICENSE"><img src="https://img.shields.io/github/license/vckyou/GeezProjects?&style=social&logo=github">
+  <a href="https://github.com/Puutraaa/Ultramens-Userbot/blob/master/LICENSE"><img src="https://img.shields.io/github/license/Puutraaa/Ultramen-Userbot?&style=social&logo=github">
   </a></p>
 
-<a href="https://t.me/GeezSupportGroup"><img src="https://img.shields.io/badge/Join-Group1%20Support-blue.svg?style=for-the-badge&logo=Telegram"></a>
-<a href="https://t.me/VcgSupportGroup"><img src="https://img.shields.io/badge/Join-Group2%20Support-blue.svg?style=for-the-badge&logo=Telegram"></a>
+<a href="https://t.me/EntarSuren"><img src="https://img.shields.io/badge/Join-Group1%20Support-blue.svg?style=for-the-badge&logo=Telegram"></a>
+<a href="https://t.me/EntarSuren"><img src="https://img.shields.io/badge/Join-Group2%20Support-blue.svg?style=for-the-badge&logo=Telegram"></a>
 
 ```
     Saya tidak bertanggung jawab atas penyalahgunaan bot ini.
 Bot ini dimaksudkan untuk bersenang-senang sekaligus membantu Anda
 mengelola grup secara efisien dan mengotomatiskan beberapa hal yang membosankan.
-Gunakan bot ini dengan risiko Anda sendiri, dan gunakan dengan bijak.
+Gunakan bot ini dengan risiko yang terjadi
 
 ```
 
@@ -34,7 +34,7 @@ Berdasarkan RaphielGang's [Telegram-Paperplane](https://github.com/RaphielGang/T
 
 ### <p align="center">DEPLOY TO HEROKU</p>
 
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/vckyou/GeezProjects/tree/master"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-pink?style=flat&logo=heroku" width="325" height="50.100" /></a></p>
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/Puutraaa/Ultramens-Userbot/tree/master"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-pink?style=flat&logo=heroku" width="325" height="50.100" /></a></p>
 
 <br>
 </p>
@@ -52,6 +52,7 @@ Berdasarkan RaphielGang's [Telegram-Paperplane](https://github.com/RaphielGang/T
 ```
 
 ## Credits
+*   [Ultramen](https://github.com/Puutraaa) - Ultramen-Userbot
 *   [Vicky](https://github.com/Vckyou) - GeezProjects
 *   [Koala](https://github.com/manusiarakitann) - Kampang-Bot
 *   [RaphielGang](https://github.com/RaphielGang) - Telegram-Paperplane
