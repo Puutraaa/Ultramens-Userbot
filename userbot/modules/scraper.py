@@ -28,7 +28,7 @@ from telethon.tl.types import InputPeerUser
 @bot.on(geezbot_cmd(outgoing=True, pattern=r"getmemb ?(.*)"))
 async def scrapmem(event):
     chat = event.chat_id
-    await event.edit("`Please wait...`")
+    await event.edit("`Sedang Proses Mohon Tunggu`")
     event.client
     members = await event.client.get_participants(chat, aggressive=True)
 
@@ -37,12 +37,12 @@ async def scrapmem(event):
         writer.writerow(["user_id", "hash"])
         for member in members:
             writer.writerow([member.id, member.access_hash])
-    await event.edit("`Members scraped.`")
+    await event.edit("`Babu Terkumpul`")
 
 
 @bot.on(geezbot_cmd(outgoing=True, pattern=r"addmemb ?(.*)"))
 async def admem(event):
-    await event.edit("`Adding 0 members...`")
+    await event.edit("`Menambahkan 0 Babu`")
     chat = await event.get_chat()
     event.client
     users = []
@@ -62,7 +62,7 @@ async def admem(event):
             userin = InputPeerUser(user['id'], user['hash'])
             await event.client(InviteToChannelRequest(chat, [userin]))
             await asyncio.sleep(random.randrange(5, 7))
-            await event.edit(f"`Menambahkan {n} anggota...`")
+            await event.edit(f"`Menambahkan {n} babu...`")
         except TypeError:
             n -= 1
             continue
