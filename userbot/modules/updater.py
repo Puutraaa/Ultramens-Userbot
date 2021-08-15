@@ -117,9 +117,9 @@ async def update(event, repo, ups_rem, ac_br):
     except GitCommandError:
         repo.git.reset("--hard", "FETCH_HEAD")
     await update_requirements()
-    await event.edit('**GeezProject** Berhasil Di Update✓')
+    await event.edit('**Ultramen Userbot** Berhasil Di Update✓')
     await asyncio.sleep(1)
-    await event.edit('`GeezProjects Di Restart....`')
+    await event.edit('`Ultramen Userbot Di Restart....`')
     await asyncio.sleep(1)
     await event.edit('`Silahkan Tunggu Beberapa Detik..`')
     await asyncio.sleep(10)
