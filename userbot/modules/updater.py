@@ -100,7 +100,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
         if BOTLOG:
             await event.client.send_message(
                 BOTLOG_CHATID, "#NOTE \n"
-                "GeezProjects 🔥 Berhasil Di Update✓")
+                "Ultramen Userbot ⚔️ Berhasil Di Update✓")
 
     else:
         await event.edit('`[HEROKU]:'
@@ -190,13 +190,13 @@ async def upstream(event):
 
     if changelog == '' and force_update is False:
         await event.edit(
-            f'\n`🔥GeezProjects🔥\n` sudah **versi terbaru**\n`BRANCH:`**{UPSTREAM_REPO_BRANCH}**\n')
+            f'\n`⚔️ Ultramen Userbot ⚔️\n` sudah **versi terbaru**\n`BRANCH:`**{UPSTREAM_REPO_BRANCH}**\n')
         await asyncio.sleep(15)
         await event.delete()
         return repo.__del__()
 
     if conf is None and force_update is False:
-        changelog_str = f'**UPDATE Terbaru Untuk 🔥GeezProjects🔥 [{ac_br}]:\n\nPERUBAHAN:**\n`{changelog}`'
+        changelog_str = f'**UPDATE Terbaru Untuk Ultramen Userbot⚔️ [{ac_br}]:\n\nPERUBAHAN:**\n`{changelog}`'
         if len(changelog_str) > 4096:
             await event.edit("`Changelog is too big, view the file to see it.`")
             file = open("output.txt", "w+")
@@ -216,10 +216,10 @@ async def upstream(event):
         await event.edit(
             '`Force-Syncing to latest stable userbot code, please wait...`')
     else:
-        await event.edit('`Proses Update GeezProjects, ....🛠️`')
-        await event.edit('`Proses Update GeezProjects, loading....🛠️`')
-        await event.edit('`Proses Update GeezProjects, updating....🛠️`')
-        await event.edit('`Proses Update GeezProjects\nSilahkan tunggu....🛠️`')
+        await event.edit('`Proses Update Ultramen Userbot, ....🛠️`')
+        await event.edit('`Proses Update Ultramen Userbot, loading....🛠️`')
+        await event.edit('`Proses Update Ultramen Userbot, updating....🛠️`')
+        await event.edit('`Proses Update Ultramen Userbot\nSilahkan tunggu....🛠️`')
     if conf == "now":
         await update(event, repo, ups_rem, ac_br)
         await asyncio.sleep(10)
