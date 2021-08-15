@@ -15,7 +15,7 @@ from userbot import CMD_HELP, bot
 from userbot.events import geezbot_cmd
 from userbot import CUSTOM_CMD as geez
 
-NO_ADMIN = "`Sorry you are not admin :)`"
+NO_ADMIN = "`Elu bukan admin tolol :)`"
 
 
 async def get_call(event):
@@ -40,7 +40,7 @@ async def _(e):
     new_rights = ChatAdminRights(invite_users=True)
     try:
         await e.client(startvc(e.chat_id))
-        await e.edit("`Voice Chat Started...`")
+        await e.edit("`Menyalakan VCG`")
     except Exception as ex:
         await e.edit(f"`{str(ex)}`")
 
@@ -56,14 +56,14 @@ async def _(e):
     new_rights = ChatAdminRights(invite_users=True)
     try:
         await e.client(stopvc(await get_call(e)))
-        await e.edit("`Voice Chat Stopped...`")
+        await e.edit("`UDAH WAKTU NYA SOLAT GW MATIIN VCG DULU`")
     except Exception as ex:
         await e.edit(f"`{str(ex)}`")
 
 
 @bot.on(geezbot_cmd(outgoing=True, pattern=r"vcinvite$"))
 async def _(e):
-    await e.edit("`Inviting Members to Voice Chat...`")
+    await e.edit("`Mengundang Pendesah Ke VCG`")
     users = []
     z = 0
     async for x in e.client.iter_participants(e.chat_id):
