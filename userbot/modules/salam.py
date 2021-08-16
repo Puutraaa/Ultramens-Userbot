@@ -45,7 +45,7 @@ async def typewriter(typew):
     await typew.edit("DIEM NGENTOD!!")
 # Owner @pikyus1
 
-@bot.on(geezbot_cmd(outgoing=True, pattern='gj.(?: |$)(.*)'))
+@bot.on(geezbot_cmd(outgoing=True, pattern='gjm(?: |$)(.*)'))
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("GAK,JANGAN MAKSA")
@@ -70,7 +70,7 @@ async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("KONTOL UDAH ITEM BENGKOK PULA,SOSOAN MAU PAP!!")
 
-@register(outgoing=True, pattern='^kek(?: |$)(.*)')
+@register(outgoing=True, pattern='kek(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(1)
