@@ -42,7 +42,7 @@ async def typewriter(typew):
 @bot.on(geezbot_cmd(outgoing=True, pattern='d(?: |$)(.*)'))
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("BACOT NGENTOTTT!!BAPA LU SURUH RIBUT SAMA GUA")
+    await typew.edit("DIEM,NGENTOD GW LAGI COLI")
 # Owner @pikyus1
 CMD_HELP.update({
     "salam":
