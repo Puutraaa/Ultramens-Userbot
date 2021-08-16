@@ -22,16 +22,16 @@ async def mim(event):
         return
     reply_message = await event.get_reply_message()
     if not reply_message.media:
-        await event.edit("```reply to a image/sticker/gif```")
+        await event.edit("```Mohon Reply ke Gambar/Gif```")
         return
     reply_message.sender
     await bot.download_file(reply_message.media)
     if reply_message.sender.bot:
-        await event.edit("```Reply to actual users message.```")
+        await event.edit("```Mohon Reply Ke Penggunaan```")
         return
     else:
         await event.edit(
-            "```Transfiguration Time! Mwahaha Memifying this image! (」ﾟﾛﾟ)｣ ```"
+            "```SAATNYA MENGEDIT GAMBAR BUGIL!! ```"
         )
         await asyncio.sleep(5)
         text = event.pattern_match.group(1)
@@ -170,19 +170,20 @@ async def mim(event):
         await event.edit(
             "`Syntax: reply to an image with .mmf` 'text on top' ; 'text on bottom' "
         )
-        return
-    reply_message = await event.get_reply_message()
+        reply_message = await event.get_reply_message()
     if not reply_message.media:
-        await event.edit("```reply to a image/sticker/gif```")
+        await event.edit("```Mohon Reply ke Gambar/Gif```")
+        return
+        
         return
     reply_message.sender
     await bot.download_file(reply_message.media)
     if reply_message.sender.bot:
-        await event.edit("```Reply to actual users message.```")
+        await event.edit("```MOHON REP KE PEGUNA```")
         return
     else:
         await event.edit(
-            "```Transfiguration Time! Mwahaha Memifying this image! (」ﾟﾛﾟ)｣ ```"
+            "```SAATNYA MENGEDIT GAMBAR BUGIL!!```"
         )
         await asyncio.sleep(5)
         text = event.pattern_match.group(1)
