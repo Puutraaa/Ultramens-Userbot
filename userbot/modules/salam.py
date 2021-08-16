@@ -70,7 +70,7 @@ async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("KONTOL UDAH ITEM BENGKOK PULA,SOSOAN MAU PAP!!")
 
-@bot.on(geezbot_cmd(outgoing=True, pattern='adel(?: |$)(.*)'))
+@bot.on(geezbot_cmd(outgoing=True, pattern='a(?: |$)(.*)'))
 async def typewriter(typew):
     typew.pattern_match.group(1)
 sleep(1)
