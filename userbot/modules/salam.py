@@ -70,6 +70,31 @@ async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("KONTOL UDAH ITEM BENGKOK PULA,SOSOAN MAU PAP!!")
 
+@bot.on(geezbot_cmd(outgoing=True, pattern='P(?: |$)(.*)'))
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+sleep(1)
+    await typew.edit("Ehh Lu Mau Tau Gak?")
+    sleep(1)
+    await typew.edit("Sih Adel Kan Mukanya Kaya Bagong😂")
+    sleep(1)
+    await typew.edit("Ehh Gak Bercanda Deh😁")
+    sleep(1)
+    await typew.edit("Emang Bener Adel Mukanya Kaya BAGONG🙈")
+    sleep(1)
+    await typew.edit("Ehh Engga Deh,Adel Kan Cantik Kaya Artis Korea😄")
+    sleep(1)
+    await typew.edit("Tapi Boong😂")
+    sleep(1)
+    await typew.edit("HAHAHAHAHAHAHA")
+    sleep(1)
+    await typew.edit("Udah Ahh Takut Adel Nangis Minta Permen😂")
+    sleep(1)
+    await typew.edit("Maaf Ya Adel Cantik Bercanda💖")
+    sleep(1)
+    await typew.edit("Tapi Bo'ong Hiyahiyahiya")
+# Create by myself @localheart
+
 CMD_HELP.update({
     "salam":
     "`P`\
