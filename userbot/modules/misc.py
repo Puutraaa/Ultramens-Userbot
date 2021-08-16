@@ -101,7 +101,7 @@ async def repo_is_here(wannasee):
         "│                   ʀᴇᴘᴏ\n"
         "│       [⚔️Ultramen-Userbot⚔️](https://github.com/Puutraaa/Ultramens-Userbot)\n"
         "├‒─‒──────────‒\n"
-        "│⚔️ **ᴏᴡɴᴇʀ :** [Ultramen-Userbot](t.me/EntarSuren)\n"
+        "│⚔️ **ᴏᴡɴᴇʀ :** [Ultra-men](t.me/EntarSuren)\n"
         "╰‒─‒──────────\n"
         "  𝗟𝗶𝗰𝗲𝗻𝘀𝗲 : [GPL-3.0 License](https://github.com/Puutraaa/Ultramens-Userbot/blob/Ultramen-Userbot/LICENSE)"
     )
