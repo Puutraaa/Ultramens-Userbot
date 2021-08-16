@@ -39,7 +39,11 @@ async def typewriter(typew):
     await typew.edit("`Walaikumshalom.....`")
 # Owner @Si_Dian
 
-
+@register(outgoing=True, pattern='^D(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    await typew.edit("BACOT NGENTOTTT!!BAPA LU SURUH RIBUT SAMA GUA")
+# Owner @pikyus1
 CMD_HELP.update({
     "salam":
     "`P`\
