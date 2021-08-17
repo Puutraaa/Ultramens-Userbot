@@ -180,7 +180,7 @@ CUSTOM_CMD = os.environ.get("CUSTOM_CMD") or "."
 S_PACK_NAME = os.environ.get("S_PACK_NAME") or "Stickers By @GeezProjects"
 
 # Bot version
-BOT_VER = os.environ.get("BOT_VER", "Geez V 0.1")
+BOT_VER = os.environ.get("BOT_VER", "Ultramen V.10")
 
 CMD_HELP = {}
 
@@ -258,7 +258,7 @@ with bot:
 
 
 async def check_alive():
-    await bot.send_message(BOTLOG_CHATID, "__Congratss.. Geez-Projects Has Been Active__")
+    await bot.send_message(BOTLOG_CHATID, "__Congratss.. ⚔️Ultramen-Userbot⚔️ Has Been Active🔥__")
     return
 
 with bot:
@@ -340,7 +340,7 @@ with bot:
                 result = builder.article(
                     "Please Use Only With .help Command",
                     text="{}\nTotal loaded modules: {}".format(
-                        "[GeezProjects](https://github.com/vckyou/Geez-Projects) modules helper.\n",
+                        "[⚔️UltramenUserbot⚔️](https://github.com/Puutraaa/Ultramens-Userbot) modules helper.\n",
                         len(dugmeler),
                     ),
                     buttons=buttons,
@@ -355,17 +355,17 @@ with bot:
                 )
             else:
                 result = builder.article(
-                    "Geez-Projects",
+                    "⚔️Ultramen-Userbot⚔️",
                     text="""You can convert your account to bot and use them. Remember, you can't manage someone else's bot! All installation details are explained from GitHub address below.""",
                     buttons=[
                         [
                             custom.Button.url(
                                 "GitHub Repo",
-                                "https://github.com/vckyou/Geez-Projects",
+                                "https://github.com/Puutraaa/Ultramens-Userbot",
                             ),
                             custom.Button.url(
                                 "Group Support",
-                                "https://t.me/GeezSupportGroup"),
+                                "https://t.me/EntarSuren"),
                         ],
                     ],
                     link_preview=False,
