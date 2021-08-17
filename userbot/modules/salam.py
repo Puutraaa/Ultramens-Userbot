@@ -164,6 +164,15 @@ async def typewriter(typew):
     sleep(1)
     await typew.edit("**Mandi Dulu**")
 
+@bot.on(geezbot_cmd(outgoing=True, pattern='T(?: |$)(.*)'))
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    sleep(1)
+    await typew.edit("**EH BOCAH TUA HINA, KALO TUANYA TUA AJA GOBLOK GA COCOK BOCAH TUA KAYA LU MAIN KEK GINIAN TOLOL UDAH BAU TANAH JADINYA GAUSAH BELAGU KONTOL.**")
+    sleep(7)
+    await typew.edit("**URUSIN AJA BEGO KUBURAN LU ITU BESOK CALON RUMAH LU SEKALI SEKALI YEKAN LU TINGGAL DIRUMAH GA DI RONGSOKAN MULU**")
+
+
 CMD_HELP.update({
     "salam":
     "`P`\
