@@ -30,7 +30,7 @@ for module_name in ALL_MODULES:
 
 
 LOGS.info(
-    "⚔️ Ultramen Userbot ⚔️ [Telah Aktif! ⚙️]")
+    "⚔️ Ultramen Userbot ⚔️ [Telah Aktif🔥]")
 
 
 if len(argv) not in (1, 3, 4):
