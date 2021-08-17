@@ -3,7 +3,7 @@ from userbot import CMD_HELP
 from userbot.events import register
 
 
-@register(outgoing=True, pattern='^.tua(?: |$)(.*)')
+@register(outgoing=True, pattern='.tua(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(1)
@@ -12,7 +12,7 @@ async def typewriter(typew):
     await typew.edit("**URUSIN AJA BEGO KUBURAN LU ITU BESOK CALON RUMAH LU SEKALI SEKALI YEKAN LU TINGGAL DIRUMAH GA DI RONGSOKAN MULU**")
 
 
-@register(outgoing=True, pattern='^.stress(?: |$)(.*)')
+@register(outgoing=True, pattern='.stress(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(1)
@@ -29,7 +29,7 @@ async def typewriter(typew):
     await typew.edit("**MAU SAMPE KAPAN PUN GUA BAKALAN LADENIN LU GOBLOK, LADENIN MANUSIA PURBA JELEK KEK LU GABAKALAN BERENTI GUA TOLOL NI YE GUA SARANIN MENDING LU APUS TELE DAH KONTOL.**")
 
 
-@register(outgoing=True, pattern='^.yesus(?: |$)(.*)')
+@register(outgoing=True, pattern='.yesus(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(1)
@@ -38,7 +38,7 @@ async def typewriter(typew):
     await typew.edit("**YESUS TERAMAT TULUS SAMPAI JADI TUKANG PIJIT PLUS PLUS YANG MELAYANI UMATNYA.**")
 
 
-@register(outgoing=True, pattern='^.buddha(?: |$)(.*)')
+@register(outgoing=True, pattern='.buddha(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(1)
@@ -55,7 +55,7 @@ async def typewriter(typew):
     await typew.edit("**ANEH BANGET DAH TU AGAMA CUIHHH!!!!**")
 
 
-@register(outgoing=True, pattern='^.erpe(?: |$)(.*)')
+@register(outgoing=True, pattern='.erpe(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(1)
@@ -74,7 +74,7 @@ async def typewriter(typew):
     await typew.edit("**Eh Maaf Lu Kan Atheis, Jadi Gapercaya Tuhan. Makanya Tolol Kek Gini.**")
 
 
-@register(outgoing=True, pattern='^.biksu(?: |$)(.*)')
+@register(outgoing=True, pattern='.biksu(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(1)
@@ -87,7 +87,7 @@ async def typewriter(typew):
     await typew.edit("**BOTAK BIADAB YAHAHAHA WAHYOEEE...**")
 
 
-@register(outgoing=True, pattern='^.ngontol(?: |$)(.*)')
+@register(outgoing=True, pattern='.ngontol(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(1)
@@ -104,28 +104,10 @@ async def typewriter(typew):
     await typew.edit("**KONTOOOOOLLLLL!!!!**")
 
 
-@register(outgoing=True, pattern='^.gajelas(?: |$)(.*)')
+@register(outgoing=True, pattern='.gajelas(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(1)
     await typew.edit("**YA AMPUN LU NGOMONG APA? GA NYAMBUNG KONTOL KAYA KEHIDUPAN LU MAKANYA ORG ORG KAYA LU GABAKALN MAJU HIDUPNYA APA LAGI ORG ORG BAWAHAN KAYA LU.**")
 
 
-CMD_HELP.update({
-    "nyindir1":
-    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.ngontol`\
-\n↳ : Coba Aja Sendiri.\
-\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.stress`\
-\n↳ : Coba Aja Sendiri.\
-\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.erpe`\
-\n↳ : Coba Aja Sendiri.\
-\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.buddha`\
-\n↳ : Coba Aja Sendiri.\
-\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.yesus`\
-\n↳ : Coba Aja Sendiri.\
-\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.biksu`\
-\n↳ : Coba Aja Sendiri.\
-\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.gajelas`\
-\n↳ : Coba Aja Sendiri.\
-\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.tua`\
-\n↳ : Coba Aja Sendiri."
