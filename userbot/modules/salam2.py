@@ -19,7 +19,7 @@ async def typewriter(typew):
     await typew.edit("**YAHAHA WAHYOOOOEEEEE**")
 
 
-@register(outgoing=True, pattern='^.eg(?: |$)(.*)')
+@register(outgoing=True, pattern='.eg(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("**EH GOBLOK!!!**")
@@ -37,7 +37,7 @@ async def typewriter(typew):
     await typew.edit("**ASTAGFIRULLAHALAZDIM....**")
 
 
-@register(outgoing=True, pattern='X(?: |$)(.*)')
+@register(outgoing=True, pattern='.X(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("**GRUP SAMPAH KEK GINI MENDING BUBARIN AJA NGENTOT.**")
@@ -49,7 +49,7 @@ async def typewriter(typew):
     await typew.edit("**SOK KERAS BANGET SI JAMET INI BHAAAKSSSS.**")
 
 
-@register(outgoing=True, pattern='O(?: |$)(.*)')
+@register(outgoing=True, pattern='.O(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("**JANGAN MAIN BOT MULU ALAY LU GOBLOK NORAK BANGET ANJING CUIHHHHH!!!**")
@@ -62,7 +62,7 @@ async def typewriter(typew):
     await typew.edit("**HEH LU BABU, HARUS SOPAN SAMA MAJIKAN LU GOBLOK. KERJA YANG BENER BIAR MAK LU KAGAK NGELONTE LAGI BUAT KASIH MAKAN LU TOLOL!!!**")
 
 
-@register(outgoing=True, pattern='F(?: |$)(.*)')
+@register(outgoing=True, pattern='.F(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("**BHAAAAAAAAAKKKKKSSSSS**")
