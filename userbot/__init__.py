@@ -312,15 +312,16 @@ with bot:
         dugmeler = CMD_HELP
         me = bot.get_me()
         uid = me.id
-
+        
         @tgbot.on(events.NewMessage(pattern="/start"))
         async def handler(event):
             if event.message.from_id != uid:
                 await event.reply(
-                    f"Hai Saya adalah bot asissten {ALIVE_NAME}\n [UltramenUserbot](https://github.com/Puutraaa/Ultramens-Userbot)\n mohon di pake untuk kebaikan" "
+                    f"Hai Saya adalah bot asissten {ALIVE_NAME}\n [Geez-Projects](https://github.com/Vckyou/Geez-Projects)\n please make your own bot, don't use mine"
                 )
             else:
                 await event.reply(f"`Hey there {ALIVE_NAME}\n\nSaya siap membantu mu`")
+        
 
         @tgbot.on(events.NewMessage(pattern="/ping"))
         async def handler(event):
