@@ -1,173 +1,84 @@
-from time import sleep
 from platform import uname
-from userbot import bot, ALIVE_NAME, CMD_HELP
-from userbot.events import geezbot_cmd
-
+from userbot import ALIVE_NAME, CMD_HELP
+from userbot.events import register
 
 # ================= CONSTANT =================
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 # ============================================
 
 
-@bot.on(geezbot_cmd(outgoing=True, pattern='P(?: |$)(.*)'))
+@register(outgoing=True, pattern='^P(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    sleep(1)
-    await typew.edit("**Assalamualaikum.....**")
-# Owner @Si_Dian
+    await typew.edit("**Assalamu'alaikum Warohmatullahi Wabarokatuh.**")
 
 
-@bot.on(geezbot_cmd(outgoing=True, pattern='p(?: |$)(.*)'))
+@register(outgoing=True, pattern='^S(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    sleep(1)  
-    await typew.edit("**P WR WB.....**")
-# Owner @Si_Dian
+    await typew.edit("**SOKAP BANGET LU NAJIS ANJING GAUSAH REP REP CUIHHH!!!!**")
 
-@bot.on(geezbot_cmd(outgoing=True, pattern='L(?: |$)(.*)'))
+
+@register(outgoing=True, pattern='^W(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    sleep(1)
-    await typew.edit("**Walaikumsalam......**")
-# Owner @Si_Dian
+    await typew.edit("**WAR WAR TAI ANJING!!! SOK SOK AN NANTANG WAR, EH KE TRIGGERED MINTA SHARE LOCK. PAS UDAH DI SHARE LOCK NGILANG. MENTAL KEK TAI BHAAAKSSS!!!!**")
 
 
-@bot.on(geezbot_cmd(outgoing=True, pattern='l(?: |$)(.*)'))
+@register(outgoing=True, pattern='^A(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    sleep(1)
-    await typew.edit("**Walaikumshalom.....**")
-# Owner @Si_Dian
+    await typew.edit("**APAAN SI LU TOLOOLLLLL!!!!**")
 
-@bot.on(geezbot_cmd(outgoing=True, pattern='d(?: |$)(.*)'))
+
+@register(outgoing=True, pattern='^.pp(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("**DIEM NGENTOD!!**")
-# Owner @pikyus1
+    await typew.edit("**PASANG PP DULU LU NGENTOT BIAR SEMUA ORANG TAU MUKA LU YANG HINA ITU CUIHHHH!!!!**")
 
-@bot.on(geezbot_cmd(outgoing=True, pattern='gjm(?: |$)(.*)'))
+
+@register(outgoing=True, pattern='^L(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("**GAK,JANGAN MAKSA**")
+    await typew.edit("**Wa'alaikumssalam Warohmatullahi Wabarokatuh**")
 
-@bot.on(geezbot_cmd(outgoing=True, pattern='g(?: |$)(.*)'))
+
+@register(outgoing=True, pattern='^B(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("**BABI LU GOBLOK!!GANTENGAN JUGA GUA HAHAHAHA**")
+    await typew.edit("**BACOT BANGET LU ANJEEEENGGGG!!!!**")
 
-@bot.on(geezbot_cmd(outgoing=True, pattern='c(?: |$)(.*)'))
+
+@register(outgoing=True, pattern='^Y(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("**BABI LU GOBLOK!!CANTIKAN JUGA GUA HAHAHAHA**")
+    await typew.edit("**YAUDAH IYAAIN AJA GOBLOK!!!**")
 
-@bot.on(geezbot_cmd(outgoing=True, pattern='bct(?: |$)(.*)'))
+
+@register(outgoing=True, pattern='^G(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("**BACOTAN LU GAK BIKIN GUA TREMOR GOBLOK HAHAHAHA!!**")
+    await typew.edit("**GAK KEREN LU BEGITU GOBLOK, SINI KELUARGA LU GUA LUDAHIN SATU SATU...**")
 
-@bot.on(geezbot_cmd(outgoing=True, pattern='k(?: |$)(.*)'))
-async def typewriter(typew):
-    typew.pattern_match.group(1)
-    await typew.edit("**KONTOL UDAH ITEM BENGKOK PULA,SOSOAN MAU PAP!!**")
-
-@bot.on(geezbot_cmd(outgoing=True, pattern='f(?: |$)(.*)'))
-async def typewriter(typew):
-    typew.pattern_match.group(1)
-    sleep(1)
-    await typew.edit("**Kek**")
-    sleep(1)
-    await typew.edit("**Kek Ganteng Banget**")
-    sleep(1)
-    await typew.edit("**Kan Kek Mukanya Kaya Dugong🤣**")
-    sleep(1)
-    await typew.edit("**Ehh Engga Deh,Kek Kan Ganteng Kaya Artis Korea☺️**")
-    sleep(1)
-    await typew.edit("**Tapi Boong🤣**")
-    sleep(1)
-    await typew.edit("**HAHAHAHAHAHAHA**")
-    sleep(1)
-    await typew.edit("**Udah Ahh Takut Kek Nangis Minta Pap TT🤣**")
-    sleep(1)
-    await typew.edit("**Pokoknya Kek Ganteng Banget**")
-    sleep(1)
-    await typew.edit("**Tapi Bo'ong Hiyahiyahiya**")
-
-@bot.on(geezbot_cmd(outgoing=True, pattern='a(?: |$)(.*)'))
-async def typewriter(typew):
-    typew.pattern_match.group(1)
-    sleep(1)
-    await typew.edit("**Adel**")
-    sleep(1)
-    await typew.edit("**Adel Cantik Banget**")
-    sleep(1)
-    await typew.edit("**Kan Adel Mukanya Kaya Berbi🦄**")
-    sleep(1)
-    await typew.edit("**Ehh Engga Deh,Adel Kan Cantik Kaya Artis Korea☺️**")
-    sleep(1)
-    await typew.edit("**Tapi Boong🤣**")
-    sleep(1)
-    await typew.edit("**HAHAHAHAHAHAHA**")
-    sleep(1)
-    await typew.edit("**Udah Ahh Takut AdelNangis Minta Permen🍬**")
-    sleep(1)
-    await typew.edit("**Pokoknya Adel Cantik Banget**")
-    sleep(1)
-    await typew.edit("**Tapi Bo'ong Hiyahiyahiya**")
-
-@bot.on(geezbot_cmd(outgoing=True, pattern='s(?: |$)(.*)'))
-async def typewriter(typew):
-    typew.pattern_match.group(1)
-    sleep(1)
-    await typew.edit("**Askar**")
-    sleep(1)
-    await typew.edit("**Askar Ganteng Banget**")
-    sleep(1)
-    await typew.edit("**Kan Askar Mukanya Kaya Monyet🐒**")
-    sleep(1)
-    await typew.edit("**Ehh Engga Deh,Askar Kan Ganteng Kaya Artis Korea☺️**")
-    sleep(1)
-    await typew.edit("**Tapi Boong🤣**")
-    sleep(1)
-    await typew.edit("**HAHAHAHAHAHAHA**")
-    sleep(1)
-    await typew.edit("**Udah Ahh Takut Askar Nangis Minta Pap Memek**")
-    sleep(1)
-    await typew.edit("**Pokoknya Askar Ganteng Banget**")
-    sleep(1)
-    await typew.edit("**Tapi Bo'ong Hiyahiyahiya**")
-
-@bot.on(geezbot_cmd(outgoing=True, pattern='t(?: |$)(.*)'))
-async def typewriter(typew):
-    typew.pattern_match.group(1)
-    sleep(1)
-    await typew.edit("**Putra**")
-    sleep(1)
-    await typew.edit("**Putra Ganteng Banget**")
-    sleep(1)
-    await typew.edit("**Kan Putra Mukanya Kaya Jerfi Nichol**")
-    sleep(1)
-    await typew.edit("**Ehh Engga Deh,Putra Kan Ganteng Kaya Artis Korea☺️**")
-    sleep(1)
-    await typew.edit("**Tapi boong 🤣**")
-    sleep(1)
-    await typew.edit("**HAHAHAHAHAHAHA**")
-    sleep(1)
-    await typew.edit("**Udah Ahh Takut Putra Nangis Minta Vps**")
-    sleep(1)
-    await typew.edit("**Pokoknya Putra Ganteng Banget**")
-    sleep(1)
-    await typew.edit("**Tapi Beneran**")
-
-@bot.on(geezbot_cmd(outgoing=True, pattern='m(?: |$)(.*)'))
-async def typewriter(typew):
-    typew.pattern_match.group(1)
-    sleep(1)
-    await typew.edit("**Mandi Dulu**") 
 
 CMD_HELP.update({
-    "salam":
-    "`P`\
-\nUsage: Untuk Memberi salam.\
-\n\n`L`\
-\nUsage: Untuk Menjawab Salam."
+    "salam1":
+    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.P`\
+\n↳ : Untuk Memberi salam.\
+\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `G`\
+\n↳ : Ngatain.\
+\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `A`\
+\n↳ : Coba Aja Sendiri.\
+\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.pp`\
+\n↳ : Hina Yang Gapake PP.\
+\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `B`\
+\n↳ : Buat Dikasih Ke Yang Banyak Bacot.\
+\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `W`\
+\n↳ : Ngatain Anak Sok Ngewar.\
+\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `S`\
+\n↳ : Ngatain Orang Sok Akrab.\
+\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `Y`\
+\n↳ : Kalo Debat Pake Aja.\
+\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.L`\
+\n↳ : Untuk Menjawab Salam."
 })
