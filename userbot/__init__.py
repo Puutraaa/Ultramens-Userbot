@@ -277,7 +277,7 @@ def paginate_help(page_number, loaded_modules, prefix):
     helpable_modules = [p for p in loaded_modules if not p.startswith("_")]
     helpable_modules = sorted(helpable_modules)
     modules = [
-        custom.Button.inline("{} {}".format("⚔️", x), data="ub_modul_{}".format(x))
+        custom.Button.inline("{} {}".format("⚔️",⚔️), data="ub_modul_{}".format(x))
         for x in helpable_modules
     ]
     pairs = list(zip(modules[::number_of_cols], modules[1::number_of_cols]))
@@ -317,7 +317,7 @@ with bot:
         async def handler(event):
             if event.message.from_id != uid:
                 await event.reply(
-                    f"Hai Saya adalah bot asissten {ALIVE_NAME}\n [Geez-Projects](https://github.com/Vckyou/Geez-Projects)\n please make your own bot, don't use mine"
+                    f"Hai Saya adalah bot asissten {ALIVE_NAME}\n [⚔️Ultramen-Userbot](https://github.com/Puutraaa/Ultramens-Userbot)\n MOHON DI GUNAKAN SEBAIK BAIKNYA, JANGAN DI PAKE ANEH" "
                 )
             else:
                 await event.reply(f"`Hey there {ALIVE_NAME}\n\nSaya siap membantu mu`")
