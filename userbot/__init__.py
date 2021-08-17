@@ -317,7 +317,7 @@ with bot:
         async def handler(event):
             if event.message.from_id != uid:
                 await event.reply(
-                    f"Hai Saya adalah bot asissten {ALIVE_NAME}\n [⚔️Ultramen-Userbot](https://github.com/Puutraaa/Ultramens-Userbot)\n MOHON DI GUNAKAN SEBAIK BAIKNYA, JANGAN DI PAKE ANEH" "
+                    f"Hai Saya adalah bot asissten {ALIVE_NAME}\n [UltramenUserbot](https://github.com/Puutraaa/Ultramens-Userbot)\n mohon di pake untuk kebaikan" "
                 )
             else:
                 await event.reply(f"`Hey there {ALIVE_NAME}\n\nSaya siap membantu mu`")
