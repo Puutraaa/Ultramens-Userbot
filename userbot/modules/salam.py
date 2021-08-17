@@ -158,6 +158,12 @@ async def typewriter(typew):
     sleep(1)
     await typew.edit("**Tapi Beneran**")
 
+@bot.on(geezbot_cmd(outgoing=True, pattern='m(?: |$)(.*)'))
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    sleep(1)
+    await typew.edit("`**Mandi Dulu**`")
+
 CMD_HELP.update({
     "salam":
     "`P`\
