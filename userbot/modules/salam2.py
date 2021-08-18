@@ -55,8 +55,7 @@ async def typewriter(typew):
     await typew.edit("**JANGAN MAIN BOT MULU ALAY LU GOBLOK NORAK BANGET ANJING CUIHHHHH!!!**")
 
 
-@register(outgoing=True, pattern='
-D(?: |$)(.*)')
+@register(outgoing=True, pattern='.D(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("**HEH LU BABU, HARUS SOPAN SAMA MAJIKAN LU GOBLOK. KERJA YANG BENER BIAR MAK LU KAGAK NGELONTE LAGI BUAT KASIH MAKAN LU TOLOL!!!**")
