@@ -37,7 +37,7 @@ async def typewriter(typew):
     await typew.edit("**LU LAMA-LAMA JADI KEK ANAK HARAM, KEKNYA HARUS GUA BAPTIS. SINI LU NGENTOT GUA BAPTIS BIAR SUCI JIWA LO YANG HARAM ITU!!!**")
 
 
-@register(outgoing=True, pattern='.wibu(?: |$)(.*)')
+@register(outgoing=True, pattern='.wi(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("**LARI CUK ADA WIBU!!!**🏃🏃🏃")
