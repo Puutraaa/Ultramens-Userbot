@@ -65,3 +65,19 @@ async def typewriter(typew):
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("**BHAAAAAAAAAKKKKKSSSSS**")
+@register(outgoing=True, pattern='^.slipkol(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    await typew.edit("**Bismillah Dapet Slipcrot🥵**")    
+    
+
+@register(outgoing=True, pattern='^PKP(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    await typew.edit("5 LOMTE NIH BOSS!!!")
+
+
+@register(outgoing=True, pattern='^PNB(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    await typew.edit("5 Lomte LEWAT NIH BOSS!!!")
