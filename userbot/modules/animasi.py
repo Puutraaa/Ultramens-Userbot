@@ -85,55 +85,6 @@ async def typewriter(typew):
                      "\n╭╯╰╯┃╰╯┃╰╯┃╰╯┃╰╮"
                      "\n╰━━━┻━━┻━━┻━━┻━╯")
 
-@register(outgoing=True, pattern="^.hua$")
-async def koc(e):
-    if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        await e.edit("أ‿أ")
-        await e.edit("╥﹏╥")
-        await e.edit("(;﹏;)")
-        await e.edit("(ToT)")
-        await e.edit("(┳Д┳)")
-        await e.edit("(ಥ﹏ಥ)")
-        await e.edit("（；へ：）")
-        await e.edit("(T＿T)")
-        await e.edit("（πーπ）")
-        await e.edit("(Ｔ▽Ｔ)")
-        await e.edit("(⋟﹏⋞)")
-        await e.edit("（ｉДｉ）")
-        await e.edit("(´Д⊂ヽ")
-        await e.edit("(;Д;)")
-        await e.edit("（>﹏<）")
-        await e.edit("(TдT)")
-        await e.edit("(つ﹏⊂)")
-        await e.edit("༼☯﹏☯༽")
-        await e.edit("(ノ﹏ヽ)")
-        await e.edit("(ノAヽ)")
-        await e.edit("(╥_╥)")
-        await e.edit("(T⌓T)")
-        await e.edit("(༎ຶ⌑༎ຶ)")
-        await e.edit("(☍﹏⁰)｡")
-        await e.edit("(ಥ_ʖಥ)")
-        await e.edit("(つд⊂)")
-        await e.edit("(≖͞_≖̥)")
-        await e.edit("(இ﹏இ`｡)")
-        await e.edit("༼ಢ_ಢ༽")
-        await e.edit("༼ ༎ຶ ෴ ༎ຶ༽")
-
-
-@register(outgoing=True, pattern="^.fak$")
-async def koc(e):
-    if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        await e.edit(".                       /¯ )")
-        await e.edit(".                       /¯ )\n                      /¯  /")
-        await e.edit(".                       /¯ )\n                      /¯  /\n                    /    /")
-        await e.edit(".                       /¯ )\n                      /¯  /\n                    /    /\n              /´¯/'   '/´¯¯`•¸")
-        await e.edit(".                       /¯ )\n                      /¯  /\n                    /    /\n              /´¯/'   '/´¯¯`•¸\n          /'/   /    /       /¨¯\\ ")
-        await e.edit(".                       /¯ )\n                      /¯  /\n                    /    /\n              /´¯/'   '/´¯¯`•¸\n          /'/   /    /       /¨¯\\ \n        ('(   (   (   (  ¯~/'  ')")
-        await e.edit(".                       /¯ )\n                      /¯  /\n                    /    /\n              /´¯/'   '/´¯¯`•¸\n          /'/   /    /       /¨¯\\ \n        ('(   (   (   (  ¯~/'  ')\n         \\                        /")
-        await e.edit(".                       /¯ )\n                      /¯  /\n                    /    /\n              /´¯/'   '/´¯¯`•¸\n          /'/   /    /       /¨¯\\ \n        ('(   (   (   (  ¯~/'  ')\n         \\                        /\n          \\                _.•´")
-        await e.edit(".                       /¯ )\n                      /¯  /\n                    /    /\n              /´¯/'   '/´¯¯`•¸\n          /'/   /    /       /¨¯\\ \n        ('(   (   (   (  ¯~/'  ')\n         \\                        /\n          \\                _.•´\n            \\              (")
-        await e.edit(".                       /¯ )\n                      /¯  /\n                    /    /\n              /´¯/'   '/´¯¯`•¸\n          /'/   /    /       /¨¯\\ \n        ('(   (   (   (  ¯~/'  ')\n         \\                        /\n          \\                _.•´\n            \\              (\n              \\  ")
-
 
 @register(outgoing=True, pattern='^.huh(?: |$)(.*)')
 async def typewriter(typew):
@@ -150,8 +101,6 @@ async def typewriter(typew):
                      "`\n(●_●)`"
                      "`\n💔<\\  *Terimakasih`")
 
-
-
 @register(outgoing=True, pattern='^.nah(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
@@ -164,3 +113,61 @@ async def typewriter(typew):
                      "`\n💖<\\  *Tapi Bo'ong Hiyahiyahiya`")
 
 
+@register(outgoing=True, pattern='^.cakep(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    await typew.edit("`jangan insecure lo itu cakep di mata orang yang tepat `")
+    sleep(3)
+    await typew.edit("\n┻┳|"
+                     "\n┳┻|_∧"
+                     "\n┻┳|•_•｡)stop being insecure!!"
+                     "\n┳┻|⊂ﾉ"
+                     "\n┻┳|Ｊ"
+                     "\n┳┻|")
+
+@register(outgoing=True, pattern='^.yatim(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    sleep(1)
+    await typew.edit("`Hai Anak Kontol 🙈, Jangan Lupa Makan Yaa`")
+    sleep(1)
+    await typew.edit("`Jangan Bilang Lu Ga Dikasih Makan Sama Ortu 😁`")
+    sleep(1)
+    await typew.edit("`APA PERLU GUA SANTUNIN ?? 🙈🙈 xixixi`")
+    sleep(1)
+    await typew.edit("`OH IYAA LUPAAA, LU KAN BEBAN KELUARGA 🤣`")
+    sleep(1)
+    await typew.edit("`MANA MUNGKIN ORTU LU PEDULII xixixi 🙈`")
+    sleep(1)
+    await typew.edit("`KETAWA DULU BOLEH KALI YAA 😁`")
+    sleep(1)
+    await typew.edit("`HAHAHAHAHAHAHA`")
+    sleep(1)
+    await typew.edit("`KASIAN ORTUNYAA GAPEDULIII 🙈🤣`")
+    sleep(1)
+    await typew.edit("`MAAF YA, CANDAA BEBANNNN xixixi 🙈`")
+    sleep(1)
+    await typew.edit("`Tapi Bo'ong Hiyahiyahiya`")
+# Create by myself @localheart
+
+@register(outgoing=True, pattern='^.sangean(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    await typew.edit("`Kalo Sange Modal`")
+    sleep(1)
+    await typew.edit("`Jangan Modal Kontol Doang`")
+    sleep(1)
+    await typew.edit("`Goblook Emang`")
+    sleep(1)
+    await typew.edit("`Kelamaan Nge Jomblo Sih`")
+    sleep(1)
+    await typew.edit("`Jadinya Gitu, Sange Berat`")
+    sleep(1)
+    await typew.edit("`MAKANYA KALO HIDUP HARUS GANTENG KONTOOOLL`")
+# Create by myself @localheart
+
+
+@register(outgoing=True, pattern="^.mf$")
+async def koc(e):
+    if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
+        await e.edit("`mf g dl` **ミ(ノ;_ _)ノ=3** ")
