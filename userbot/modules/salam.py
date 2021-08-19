@@ -60,7 +60,46 @@ async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("**GAK KEREN LU BEGITU GOBLOK, SINI KELUARGA LU GUA LUDAHIN SATU SATU...**")
 
+@register(outgoing=True, pattern='^.ext(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    await typew.edit("**GUA KELUAR AJA LAH NGENTOT**")
+    sleep(1)
+    await typew.edit("**GC NYA JELEK BAT KONTOL**")
+    sleep(1)
+    await typew.edit("**Tapi Boong, GC Nya Belom Bubar**")
+    sleep(2)
+    await typew.edit("**Gajadi Gesssssss Becanda Doang HAHAHA**")
+    
 
+@register(outgoing=True, pattern='^.pbl(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    await typew.edit("**PP BULE?**")
+    sleep(1)
+    await typew.edit("**ANJINK ADA PP BULE**")
+    sleep(1)
+    await typew.edit("**BANGSATTTTTTTTTTTT**")
+    sleep(2)
+    await typew.edit("**LAWRIIIIIII ADA YANG MAKE PP BULE!!!**")
+    sleep(2)
+    await typew.edit("**UDAH BULE PINTEREST LAGI KONTOLL**")
+    sleep(1)
+    await typew.edit("**HAHAHAHA BOCAH BOCAH PINTEREST**")
+
+    
+@register(outgoing=True, pattern='^.wr(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    await typew.edit("**Ini war bang?**")
+    sleep(1)
+    await typew.edit("**War apaan sih bang?**")
+    sleep(1)
+    await typew.edit("**Buset dah galak banget**")
+    sleep(2)
+    await typew.edit("**Ajarin war bang 🥺**")    
+    
+    
 CMD_HELP.update({
     "salam1":
     "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.P`\
