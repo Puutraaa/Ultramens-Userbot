@@ -18,7 +18,7 @@ STREAM = {6}
 VIDEO_CALL = {}
 
 
-@Client.on_message(command(["vstream", f"vstream@{BOT_USERNAME}"]) & filters.group & ~filters.edited)
+@Client.on_message(command(["live", f"live@{BOT_USERNAME}"]) & filters.group & ~filters.edited)
 @authorized_users_only
 async def stream(client, m: Message):
     if 1 in STREAM:
@@ -77,7 +77,7 @@ async def stream(client, m: Message):
         return
 
 
-@Client.on_message(command(["vstop", f"vstop@{BOT_USERNAME}"]) & filters.group & ~filters.edited)
+@Client.on_message(command(["stop", f"stop@{BOT_USERNAME}"]) & filters.group & ~filters.edited)
 @authorized_users_only
 async def endstream(client, m: Message):
     if 0 in STREAM:
