@@ -18,8 +18,7 @@ STREAM = {6}
 VIDEO_CALL = {}
 
 
-@Client.on_message(command(["live", f"live@{BOT_USERNAME}"]) & filters.group & ~filters.edited)
-@authorized_users_only
+@Client.on_message(command([".live",)
 async def stream(client, m: Message):
     if 1 in STREAM:
         await m.reply_text("😕 **sorry, there's another video streaming right now**\n\n» **wait for it to finish then try again!**")
@@ -77,11 +76,11 @@ async def stream(client, m: Message):
         return
 
 
-@Client.on_message(command(["stop", f"stop@{BOT_USERNAME}"]) & filters.group & ~filters.edited)
+@Client.on_message(command([".stop",)
 @authorized_users_only
 async def endstream(client, m: Message):
     if 0 in STREAM:
-        await m.reply_text("😕 **no active streaming at this time**\n\n» start streaming by using /vstream command (reply to video)")
+        await m.reply_text("😕 **no active streaming at this time**\n\n» start streaming by using .live command (reply to video)")
         return
     try:
         await VIDEO_CALL[CHAT_ID].stop()
