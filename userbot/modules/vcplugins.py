@@ -71,20 +71,7 @@ async def _(c):
     await c.edit(f"`{z}` **Anjing Berhasil diundang ke VCG**")
 
 
-# @register(outgoing=True, groups_only=True, pattern=r"^\.joinvc$")
-# async def join_voice(c):
-    chat = await c.get_chat()
-    admin = chat.admin_rights
-    creator = chat.creator
 
-    if not admin and not creator:
-        await c.edit(f"**Maaf {ALIVE_NAME} Bukan Admin 👮**")
-        return
-    try:
-        await c.client(joinvc(await get_call(c), users=ALIVE_NAME))
-        await c.edit("`Joined...`")
-    except Exception as ex:
-        await c.edit(f"**ERROR:** `{ex}`")
 
 CMD_HELP.update(
     {
